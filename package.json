@@ -1,0 +1,37 @@
+{
+  "name": "Mix.js",
+  "version": "0.0.1",
+  "author": "Anna Vasylashko <anna.vasylashko123@gmail.com>",
+  "description": "Multitrack mixing with the Web Audio API",
+  "contributors": [
+    {
+      "name": "Nikita Pobegaylo",
+      "github": "nikita.pobegaylo24.06@gmail.com"
+    },
+    {
+      "name": "Anna Vasylashko",
+      "github": "anna.vasylashko123@gmail.com"
+    },
+    {
+      "name": "Vsevolod Pavlovskyi",
+      "github": "pavlovskyi.ve@gmail.com"
+    }
+  ],
+  "scripts": {
+    "install": "npm install -g bower && bower install",
+    "test": "grunt --force",
+    "start": "grunt app"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.6",
+    "grunt-contrib-qunit": "~0.3.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-connect": "~0.5.0",
+    "bower": "~1.4.1",
+    "grunt-cli": "~0.1.9",
+    "grunt-lintspaces": "~0.2.202",
+    "grunt-preprocess": "~3.0.1",
+    "grunt-contrib-jshint": "~0.7.1"
+  }
+}
