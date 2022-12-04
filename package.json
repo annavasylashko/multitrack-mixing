@@ -18,7 +18,8 @@
     }
   ],
   "scripts": {
-    "test": "grunt --force",
+    "install-bower": "bower install",
+    "test": "grunt",
     "start": "grunt app"
   },
   "devDependencies": {
