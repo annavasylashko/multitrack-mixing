@@ -44,6 +44,12 @@ App.module('Views', function( Views, App, Backbone, Marionette, $, _ ) {
       if ( ev && 'ontouchstart' in window && ev.type === 'click' ) {
         return;
       }
+
+      localStorage.setItem(
+        'isPlaying',
+        !JSON.parse(localStorage.getItem('isPlaying'))
+      );
+
       if ( this.model.get('playing') ) {
         this.model.pause();
       } else {

@@ -32,6 +32,7 @@
     "grunt-cli": "~1.4.3",
     "grunt-lintspaces": "~0.10.0",
     "grunt-preprocess": "~5.1.0",
-    "grunt-contrib-jshint": "~3.2.0"
+    "grunt-contrib-jshint": "~3.2.0",
+    "three": "^0.147.0"
   }
 }
