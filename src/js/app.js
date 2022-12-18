@@ -99,6 +99,7 @@
     if ( !('ontouchstart' in window) ) {
       App.mix.play();
     }
+    App.mix.play();
   });
 
   // rAF loop for meters
@@ -196,6 +197,7 @@
     function startup() {
       App.mix.fetch();
       App.start();
+      App.pause()
     }
     if ( location.hash ) {
       $.ajax({
