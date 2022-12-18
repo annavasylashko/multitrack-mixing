@@ -99,6 +99,7 @@
     if ( !('ontouchstart' in window) ) {
       App.mix.play();
     }
+    App.mix.play();
   });
 
   // rAF loop for meters

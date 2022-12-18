@@ -18,32 +18,46 @@
     <span>Loading Audio Assets...</span>
   </div>
 
-  <div id="mixer">
-    <div id="meters">
-      <div class="vu">
-        <div class="mask">
-          <div class="needle left" style="-webkit-transform: rotateZ(0deg);"></div>
+  <div id="main-container">
+    <div id="mixer">
+      <div id="meters">
+        <div class="vu">
+          <div class="mask">
+            <div class="needle left" style="-webkit-transform: rotateZ(0deg);"></div>
+          </div>
+          <p class="vu-label">L</p>
         </div>
-        <p class="vu-label">L</p>
+        <div class="vu">
+          <div class="mask">
+            <div class="needle right" style="-webkit-transform: rotateZ(0deg);"></div>
+          </div>
+          <p class="vu-label">R</p>
+        </div>
       </div>
-      <div class="vu">
-        <div class="mask">
-          <div class="needle right" style="-webkit-transform: rotateZ(0deg);"></div>
+      <div id="master">
+        <div class="track">
+          <div class="fader" style="top: 209px;"></div>
         </div>
-        <p class="vu-label">R</p>
+        <p class="label">Master</p>
       </div>
     </div>
-    <div id="master">
-      <div class="track">
-        <div class="fader" style="top: 209px;"></div>
-      </div>
-      <p class="label">Master</p>
-    </div>
+    <div id="animation"></div>
   </div>
 
   <div id="controls"></div>
 
- 
+  <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.147.0/build/three.module.js",
+        "OrbitControls": "https://unpkg.com/three@0.147.0/examples/jsm/controls/OrbitControls.js",
+        "GLTFLoader": "https://unpkg.com/three@0.147.0/examples/jsm/loaders/GLTFLoader.js",
+        "RoomEnvironment": "https://unpkg.com/three@0.147.0/examples/jsm/environments/RoomEnvironment.js"
+      }
+    }
+  </script>
 
   <script type="text/template" id="tmpl-track">
     <div>
@@ -74,6 +88,7 @@
   </script>
 
   <script src="js/Mix.min.js"></script>
+  <script type="module" src="js/animation/animation.js"></script>
 
   <script>
     var _gaq = _gaq || [];
