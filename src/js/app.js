@@ -197,7 +197,6 @@
     function startup() {
       App.mix.fetch();
       App.start();
-      App.pause()
     }
     if ( location.hash ) {
       $.ajax({
