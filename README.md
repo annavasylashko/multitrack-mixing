@@ -15,6 +15,7 @@ Created as project for 3D modeling and visualization course in KPI university.
 | Nikita Pobegaylo    | Mixer implementation, team lead      |
 | Anna Vasylashko     | 3D animation charater implementation |
 | Vsevolod Pavlovskyi | Integration, CI, QA.                 |
+| Zakhar Zalizniy     | Intergration, Mixer implemetation    |
 
 ### Getting started
 
